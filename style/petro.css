@@ -1,0 +1,191 @@
+/* All table */
+
+.Last-sheet-date {
+    font-weight: bold;
+}
+
+.reading-date {
+    height: 50px;
+}
+
+.Reading-date {
+    font-weight: bold;
+    padding-left: 150px;
+}
+
+.last-date {
+    padding-top: 5px;
+}
+
+.A-ms {
+    font-weight: bold;
+    /* padding-left: 35px; */
+    padding-top: 10px;
+}
+
+.line {
+    margin-left: 5px;
+}
+
+.name-ms {
+    font-weight: bold;
+    /* padding-left: 50px; */
+}
+
+.name-ms-skip {
+    font-weight: bold;
+    padding-left: 150px;
+}
+
+.M-S-Chart {
+    padding-top: 15px;
+    /* padding-left: 30px; */
+    width: 98%;
+    overflow: auto;
+}
+
+.Table-nozzal {
+    font-weight: 600;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.Table-ms {
+    text-align: justify !important;
+    font-size: 13px;
+    width: 130px;
+    font-weight: 700;
+    /* padding-left: 20px; */
+}
+
+.Name-ms {
+    text-align: center;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+
+/* All tabs */
+
+body {
+    background: #16a085;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.nav-pills {
+    width: 100%;
+}
+
+.nav-item {
+    width: 7%;
+}
+
+.nav-pills .nav-link {
+    /* font-weight: ; */
+    padding-top: 5px;
+    text-align: center;
+    background: #343436;
+    color: #fff;
+    border-radius: 10px;
+    height: 100px;
+    border-right: solid 3px #E2E3E5;
+}
+
+.nav-pills .nav-link.active {
+    background: #fff;
+    color: #000;
+    border-right: solid 3px white;
+}
+
+.tab-content {
+    position: absolute;
+    width: 96%;
+    height: auto;
+    margin-top: -50px;
+    background: #fff;
+    color: #000;
+    border-radius: 7px;
+    z-index: 1000;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+ul {
+    margin-left: 10px;
+}
+
+.table {
+    border: black solid 2px;
+}
+
+.Total-ms {
+    font-size: 13px;
+}
+
+.Total-MS {
+    border: black solid 2px;
+    margin-top: 50px;
+    height: 50px;
+}
+
+.btn {
+    font-weight: 700;
+}
+
+.Total-MS-Chart {
+    padding-left: 30px;
+    position: fixed;
+}
+
+
+/* slider  css*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

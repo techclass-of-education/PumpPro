@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/petro.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Petro manager</title>
+</head>
+
+<body style=" background: #16a085;">
+
+    <!-- <div id="mySidenav" class="sidenav">
+
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Account</a>
+        <a href="#">Report</a>
+        <a href="#">Billing</a>
+        <a href="#">Setting</a>
+        <a href="#">Log out</a>
+
+    </div> -->
+
+
+    <div class="row main-row">
+        <div class="col-9">
+            <table class="table table-bordered">
+                <div class="row reading-date">
+                    <div class="last-date">
+                        <span class="Last-sheet-date">Last Sheet Date :</span>
+                        <span class="Reading-date">Reading Date : 12-02-2021</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <label for="ms" class="A-ms">A-MS :</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="col-4">
+                        <label for="ms" class="A-ms">B-SPEED :</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="col-4">
+                        <label for="ms" class="A-ms">C-HSD :</label>
+                        <input type="number">
+                    </div>
+
+                </div>
+
+                <hr class="line">
+
+
+                <div>
+                    <label for="ms" class="name-ms">Product Name - MS</label>
+                    <label for="skip" class="name-ms-skip">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    Skip
+                  </label>
+                </div>
+            </table>
+
+
+            <div class="M-S-Chart">
+                <table class="table table-bordered" id="table-vr">
+
+                    <tr>
+                        <td><span class="Table-ms">Nozzle Name</span></td>
+                        <td><span class="Table-nozzal"> MS-1</span></td>
+                        <td><span class="Table-nozzal"> MS-2</span></td>
+                        <td><span class="Table-nozzal"> MS-3</span></td>
+                        <td><span class="Table-nozzal"> MS-4</span></td>
+                        <td><span class="Table-nozzal"> MS-5</span></td>
+                        <td><span class="Table-nozzal"> MS-6</span></td>
+                        <td><span class="Table-nozzal"> MS-Total</span></td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td><span class="Table-ms">Name</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">-</span></td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="Table-ms">Petro Op.Reading</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+
+
+
+                    </tr>
+                    <tr>
+                        <td><span class="Table-ms">Sale Unit</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Testing</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Net Sale in Unit</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Petrol Rate</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Pretrol Receipts</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Closing Reading</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+
+                </table>
+            </div>
+
+            <hr class="line">
+
+            <div>
+                <label for="ms" class="name-ms">Product Name - Speed</label>
+                <label for="skip" class="name-ms-skip">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    Skip
+                  </label>
+            </div>
+
+
+            <div class="M-S-Chart">
+                <table class="table table-bordered" id="table-vr">
+
+                    <tr>
+                        <td><span class="Table-ms">Nozzle Name</span></td>
+                        <td><span class="Table-nozzal"> MS-1</span></td>
+                        <td><span class="Table-nozzal"> MS-2</span></td>
+                        <td><span class="Table-nozzal"> MS-3</span></td>
+                        <td><span class="Table-nozzal"> MS-4</span></td>
+                        <td><span class="Table-nozzal"> MS-5</span></td>
+                        <td><span class="Table-nozzal"> MS-6</span></td>
+                        <td><span class="Table-nozzal"> MS-Total</span></td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td><span class="Table-ms">Name</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">-</span></td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="Table-ms">Petro Op.Reading</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+
+
+
+                    </tr>
+                    <tr>
+                        <td><span class="Table-ms">Sale Unit</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Testing</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Net Sale in Unit</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Petrol Rate</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Pretrol Receipts</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Closing Reading</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+
+                </table>
+            </div>
+
+            <hr class="line">
+
+            <div>
+                <label for="ms" class="name-ms">Product Name - HSD</label>
+                <label for="skip" class="name-ms-skip">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    Skip
+                  </label>
+            </div>
+
+
+            <div class="M-S-Chart">
+                <table class="table table-bordered" id="table-vr">
+
+                    <tr>
+                        <td><span class="Table-ms">Nozzle Name</span></td>
+                        <td><span class="Table-nozzal"> MS-1</span></td>
+                        <td><span class="Table-nozzal"> MS-2</span></td>
+                        <td><span class="Table-nozzal"> MS-3</span></td>
+                        <td><span class="Table-nozzal"> MS-4</span></td>
+                        <td><span class="Table-nozzal"> MS-5</span></td>
+                        <td><span class="Table-nozzal"> MS-6</span></td>
+                        <td><span class="Table-nozzal"> MS-Total</span></td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td><span class="Table-ms">Name</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">Rahul</span></td>
+                        <td><span class="Name-ms">-</span></td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="Table-ms">Petro Op.Reading</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Sale Unit</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Testing</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Net Sale in Unit</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Petrol Rate</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Pretrol Receipts</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><span class="Table-ms">Closing Reading</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+
+                </table>
+            </div>
+
+            <p><a href="#" onclick="tableSwap()"><button>ok</button></a></p>
+
+        </div>
+
+        <div class="col-3">
+            <div class="Total-MS-Chart">
+                <table class="table table-bordered">
+
+                    <tr>
+                        <th>Shift Opening Cash</th>
+                        <td>0000000</td>
+
+                    </tr>
+
+                    <tr>
+                        <th>Gross Receipts</th>
+                        <td>0000000</td>
+
+                    </tr>
+
+                    <tr>
+                        <th>Paytm <br> HDFC
+                        </th>
+                        <td>0000000</td>
+
+                    </tr>
+
+                    <tr>
+                        <th> Neet Cash Recepits</th>
+                        <td>0000000</td>
+                    </tr>
+
+                    <tr>
+                        <th>Expesnse :</th>
+                        <td>0000000</td>
+                    </tr>
+
+                    <tr>
+                        <th> Total Expesnse :</th>
+                        <td>0000000</td>
+                    </tr>
+
+                    <tr>
+                        <th>Bank Deposite :
+                            <br> CANARA BANK
+                        </th>
+                        <td>0000000</td>
+                    </tr>
+
+
+                    <tr>
+                        <th>Shift Closing Cash</th>
+                        <td>0000000</td>
+                    </tr>
+
+                    <tr>
+                        <th>Closing cash in Hand</th>
+                        <td>0000000</td>
+                    </tr>
+
+                    <tr>
+                        <th>Actual Cash in Drawer</th>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>Shortage</th>
+                        <td></td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="mainjs/table.js"></script>
+</body>
+
+</html>
